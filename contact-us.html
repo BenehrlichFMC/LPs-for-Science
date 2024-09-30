@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LPs for Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            padding: 30px 0;
+            border-bottom: #4a90e2 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-weight: 700;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us - LPs for Science</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="purpose">Purpose of reaching out</label>
+                    <textarea id="purpose" name="purpose" rows="4" required></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
